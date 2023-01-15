@@ -12,14 +12,14 @@ function Main() {
   return (
     <>
       <main>
-        <section className=' '>
+        <section className=" ">
           <Routes>
-            <Route path='/landingPage' element={<Landingpage />} />
-            <Route path='/ChatGpt' element={<ChatGpt />} />
-            <Route path='/' element={<HomeScreen />} />
-            <Route path='/Askserc' element={<Askserc />} />
-            <Route path='/Showresult' element={<Showresult />} />
-            <Route path='/Testask' element={<Testask />} />
+            <Route path="/landingPage" element={<Landingpage />} />
+            <Route path="/ChatGpt" element={<ChatGpt />} />
+            <Route path="/" element={<Askserc />} />
+            <Route path="/Askserc" element={<Askserc />} />
+            <Route path="/Showresult" element={<Showresult />} />
+            <Route path="/Testask" element={<Testask />} />
           </Routes>
         </section>
       </main>
