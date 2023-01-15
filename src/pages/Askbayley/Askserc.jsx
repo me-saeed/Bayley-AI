@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Grid from "@mui/material/Grid";
-// import SpeechRecognition, {
-//   useSpeechRecognition,
-// } from "react-speech-recognition";
+// import { Navigate } from "react-router-dom";
 
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -20,6 +18,18 @@ function Askserc() {
   const [notesStore, setnotesStore] = useState([]);
 
   // const startRecordControllers = () => {};
+
+  // const [text, setText] = useState("");
+  // const [pageNumber, setPageNumber] = useState(1);
+
+  // useEffect(() => {
+  //   fetch("https://your-api-endpoint.com/text?page=" + pageNumber)
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setText(data.text);
+  //       setPageNumber(data.page_number);
+  //     });
+  // }, [pageNumber]);
 
   const storeNote = () => {
     setnotesStore([...notesStore, note]);
@@ -114,6 +124,7 @@ function Askserc() {
               <div className='chatInputfield-item   w-8/12 h-fit flex items-center'>
                 <div className='flex items-center border-2 shadow-md rounded w-full '>
                   <input
+                    onChange={(e) => setnotesStore(e.target.value)}
                     type='text'
                     className=' w-full py-3 px-2 focus:outline-none text-center'
                   />
@@ -133,6 +144,9 @@ function Askserc() {
                     <i
                       onClick={storeNote}
                       disabled={!note}
+                      // onClick={() => {
+                      //   setPageNumber(pageNumber + 1);
+                      // }}
                       class='fas fa-paper-plane mr-4'
                     ></i>
                   </span>

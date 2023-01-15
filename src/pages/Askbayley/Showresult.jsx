@@ -1,8 +1,15 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Showresult() {
+  let navigate = useNavigate();
+  const Askserc = () => {
+    let path = `/Askserc`;
+    navigate(path);
+  };
+
   return (
     <>
       <Grid container spacing={2}>
@@ -35,7 +42,10 @@ function Showresult() {
         >
           <div className=' bayl-col-styl-show bg-gradiant h-full xs:w-full '>
             <div className='flex'>
-              <button className='flex btn-bal-styles mt-4 ml-4 border-2 bg-white text-purple-500 py-2 px-8 rounded-md'>
+              <button
+                onClick={Askserc}
+                className='flex btn-bal-styles mt-4 ml-4 border-2 bg-white text-purple-500 py-2 px-8 rounded-md'
+              >
                 <i class='fal fa-plus mr-4'></i>
                 <p className='  text-wrap-styling'>New Chat</p>
               </button>
