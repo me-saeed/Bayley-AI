@@ -19,11 +19,11 @@
 .text-color {
   color: var(--primary);
 }
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
-.chatArea-wrapper{
+.chatArea-wrapper {
   height: 55%;
 }
 
@@ -39,11 +39,11 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .mainScreen-wrapper{
+  .mainScreen-wrapper {
     height: 100vh;
     /* border: 2px solid rgb(236, 167, 20); */
   }
-  .suggQuestBox-wrapper{
+  .suggQuestBox-wrapper {
     height: 12vh;
     /* border: 2px solid rgb(106, 255, 6); */
   }
@@ -51,99 +51,253 @@
     font-size: 14px;
     padding: 4px 4px;
   }
-  .autoQuestBar-wrapper{
+  .autoQuestBar-wrapper {
     height: 10vh;
     /* border: 2px solid yellow; */
   }
-  .askQuestion-item{
+  .askQuestion-item {
     width: 95%;
   }
-  .askQuestionText-wrapper p{
+  .askQuestionText-wrapper p {
     font-size: 12px;
   }
-  .askQuestionIcon-wrapper i{
+  .askQuestionIcon-wrapper i {
     font-size: 13px;
   }
   .chatArea-wrapper {
-    
     height: 10vh;
     /* border: 2px solid rgba(139, 2, 2, 0.847); */
   }
   .chatBox-item {
     width: 80%;
   }
-  .robotMessage-wrapper p{
+  .robotMessage-wrapper p {
     font-size: 13px;
   }
-  .robotMessage-wrapper i{
+  .robotMessage-wrapper i {
     font-size: 17px;
   }
-  .userMessage-wrapper p{
+  .userMessage-wrapper p {
     font-size: 13px;
   }
-  .userMessage-wrapper i{
+  .userMessage-wrapper i {
     font-size: 17px;
   }
-  .chatInput-wrapper{
-   height: px;
-   /* border: 2px solid rgb(250, 5, 250); */
+  .chatInput-wrapper {
+    height: px;
+    /* border: 2px solid rgb(250, 5, 250); */
   }
-  .chatInputfield-item{
+  .chatInputfield-item {
     width: 95%;
     /* border: 2px solid brown; */
-    
   }
-  
-  .chatArea-wrapper{
+
+  .chatArea-wrapper {
     height: 66%;
-    
   }
   /* homeScreen */
-  .robotMessageWrapper{
+  .robotMessageWrapper {
     height: 20vh;
-  width: 90%;
-  
+    width: 90%;
   }
-  .robotIcon i{
+  .robotIcon i {
     margin-right: 5px;
   }
-  .chatSuggQuestWrapper{
+  .chatSuggQuestWrapper {
     height: 20vh;
     width: 90%;
   }
-  .dropdown-items{
+  .dropdown-items {
     padding: 15px;
   }
-  .ConvoWrapper{
+  .ConvoWrapper {
     height: 20vh;
     width: 90%;
   }
-  .convo-item{
+  .convo-item {
     padding: 15px 0px;
   }
-  .allConvobtn-wrapper{
+  .allConvobtn-wrapper {
     height: 8vh;
     width: 90%;
   }
-  .allConvoText{
-  margin-left: 20px;
+  .allConvoText {
+    margin-left: 20px;
   }
 }
 
 /*HomeScreen */
-.robotMessageWrapper{
-  height: 20vh;
-
-}
-.chatSuggQuestWrapper{
+.robotMessageWrapper {
   height: 20vh;
 }
-.ConvoWrapper{
+.chatSuggQuestWrapper {
   height: 20vh;
 }
-.allConvobtn-wrapper{
+.ConvoWrapper {
+  height: 20vh;
+}
+.allConvobtn-wrapper {
   height: 8vh;
 }
-.convo-item{
- background-color: #036b62;
-} 
+.convo-item {
+  background-color: #036b62;
+}
+
+/* my csss */
+.bg-gradiant {
+  background-image: linear-gradient(#2ec8e2, #36b8e5, #6a4cf4);
+  /* border-radius: 0 0 2% 2%/0 0 2% 2%; */
+}
+
+@media screen and (max-width: 600px) {
+  .bayl-col-styl {
+    max-width: 150px;
+  }
+  .bal-imag-styl {
+    width: 63px;
+    height: 63px;
+    margin-top: 12px;
+  }
+  .bal-text-styl {
+    font-size: 25px;
+  }
+  .resp-text-styl {
+    font-size: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .resp-inpt-styl {
+    padding: 5px 5px;
+  }
+  .bal-resp {
+    display: flex;
+    justify-content: center;
+  }
+  .btn-bal-styl {
+    padding: 6px 6px;
+  }
+  .btn-bal-styles {
+    padding: 7px 14px;
+  }
+  .text-wrap-styl {
+    font-size: 10px;
+    margin-top: 4px;
+  }
+  .text-wrap-styling {
+    font-size: 10px;
+    margin-top: 2px;
+  }
+  .styl-bal-desc {
+    width: 233px;
+    display: flex;
+    justify-content: center;
+  }
+  .wrap-bal-txt {
+    /* width: 310px; */
+    display: flex;
+    justify-content: center;
+  }
+  .bal-ask-wrap {
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
+  .bal-exm-styl {
+    font-size: 7px;
+    display: flex;
+    justify-content: center;
+    /* margin-left: 10px; */
+  }
+  .chatInputfield-item {
+    width: 195px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .bayl-col-styl {
+    width: 200px;
+  }
+  .bal-ask-wrap {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
+  .bal-exm-styl {
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .bayl-col-styl {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .icon-styl {
+    font-size: large;
+    margin-left: 12px;
+  }
+  .show-txt-styl {
+    font-size: 10px;
+  }
+  .text-show-wrap {
+    font-size: 12px;
+  }
+  .list-show-wrap {
+    font-size: 10px;
+  }
+  .text-show-wraping {
+    font-size: 12px;
+    margin-left: 12px;
+  }
+  .list-styl-show-wrap {
+    font-size: 12px;
+    margin-left: 12px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .bal-stylin-wrap-side {
+    width: 100%;
+    /* margin: auto; */
+    /* border: 3px solid #73ad21; */
+  }
+  .bayl-col-styl-show {
+    width: auto;
+  }
+  .text-show-wraping {
+    font-size: 15px;
+    margin-left: 12px;
+  }
+  .list-styl-show-wrap {
+    font-size: 12px;
+    margin-left: 12px;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .bal-stylin-wrap-side {
+    width: 100%;
+    /* margin: auto; */
+    /* border: 3px solid #73ad21; */
+  }
+  .bayl-col-styl-show {
+    width: auto;
+  }
+}
+
+/* testtttttttttcsssss */
+
+.noteContainer {
+  border: 1px solid grey;
+  min-height: 15rem;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  margin: 5px;
+}
